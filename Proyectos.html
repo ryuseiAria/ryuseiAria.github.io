@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio-Profesional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <nav class="navbar bg-dark fixed-top" data-bs-theme="dark">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand" href="index.html">JK. Jennie Kim</a>
+    <button id="theme-toggle" class="btn btn-outline-morado rounded-pill ms-2">Modo Oscuro</button>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navegación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="perfil.html">Perfil Personal</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="PerfilProfesional.html">Perfil Profesional</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Trayectoria</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Experiencia.html">Experiencia</a></li>
+              <li><a class="dropdown-item" href="Formacion.html">Formación</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="Proyectos.html">Proyectos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="referencias-laborales.html">Referencias Laborales</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="container pagina">
+    <header class="mb-5">
+        <span class="text-morado fw-semibold">MI TRABAJO</span>
+        <h1 class="display-4 fw-bold mt-2">
+            Mis <span class="text-morado">Proyectos.</span>
+        </h1>
+        <p class="text-secondary">
+            Algunos proyectos en los que he trabajado y que me han permitido poner en práctica mis conocimientos de programación y desarrollo web.
+        </p>
+    </header>
+
+    <section class="mb-5">
+        <div id="carruselProyectos"
+             class="carousel slide"
+             data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselProyectos"
+                    data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Proyecto 1"></button>
+
+                <button type="button" data-bs-target="#carruselProyectos"
+                    data-bs-slide-to="1"
+                    aria-label="Proyecto 2"></button>
+
+                <button type="button" data-bs-target="#carruselProyectos"
+                    data-bs-slide-to="2"
+                    aria-label="Proyecto 3"></button>
+
+                <button type="button" data-bs-target="#carruselProyectos"
+                    data-bs-slide-to="3"
+                    aria-label="Proyecto 4"></button>
+            </div>
+
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="imagenes/projecto1.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Dashboard financiero">
+                    <div class="carousel-caption d-block bg-dark bg-opacity-75 rounded p-3">
+                        <h3>FinTech Dashboard</h3>
+                        <p>Plataforma para gestionar y visualizar información financiera.</p>
+                        <a href="#proyecto-fintech"class="btn btn-light btn-sm">
+                            Ver proyecto
+                        </a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="imagenes/projecto2.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Plataforma de inteligencia artificial">
+                    <div class="carousel-caption d-block bg-dark bg-opacity-75 rounded p-3">
+                        <h3>AI Analytics Platform</h3>
+                        <p>Sistema de análisis de datos mediante inteligencia artificial.</p>
+                        <a href="#proyecto-ai" class="btn btn-light btn-sm">Ver proyecto</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="imagenes/project3.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Tienda virtual">
+                    <div class="carousel-caption d-block bg-dark bg-opacity-75 rounded p-3">
+                        <h3>Fashion E-commerce</h3>
+                        <p>Tienda virtual para la venta de productos de moda.</p>
+                        <a href="#proyecto-fashion" class="btn btn-light btn-sm">Ver proyecto</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="imagenes/projecto4.png" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Aplicación de organización de tareas">
+                    <div class="carousel-caption d-block bg-dark bg-opacity-75 rounded p-3">
+                        <h3>TaskFlow</h3>
+                        <p>Aplicación para organizar tareas y proyectos.</p>
+                        <a href="#proyecto-taskflow" class="btn btn-light btn-sm">Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselProyectos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carruselProyectos"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <h2 class="h3 fw-bold mb-4">
+            Detalles de mis proyectos
+        </h2>
+        <article id="proyecto-fintech" class="row align-items-center g-4 mb-5">
+            <div class="col-md-5">
+                <img src="imagenes/projecto1.jpg" class="img-fluid rounded" alt="FinTech Dashboard">
+            </div>
+
+            <div class="col-md-7">
+                <span class="text-morado fw-semibold small">PROYECTO 01</span>
+                <h3 class="h4 fw-bold mt-2">FinTech Dashboard</h3>
+                <p class="text-secondary">
+                    Desarrollo de una plataforma para visualizar movimientos
+                    financieros, consultar transacciones y observar estadísticas
+                    mediante gráficos.
+                </p>
+                <p><strong>Mi participación:</strong> Diseño de interfaz,
+                    desarrollo de funcionalidades y conexión con bases de datos.</p>
+                <p><strong>Tecnologías:</strong></p>
+                <span class="badge bg-morado">React</span>
+                <span class="badge bg-morado">JavaScript</span>
+                <span class="badge bg-morado">SQL</span>
+            </div>
+        </article>
+
+        <hr class="my-4">
+
+        <article id="proyecto-ai" class="row align-items-center g-4 mb-5">
+            <div class="col-md-5">
+                <img src="imagenes/projecto2.jpg" class="img-fluid rounded" alt="AI Analytics Platform">
+            </div>
+            <div class="col-md-7">
+                <span class="text-morado fw-semibold small">PROYECTO 02</span>
+                <h3 class="h4 fw-bold mt-2">AI Analytics Platform</h3>
+                <p class="text-secondary">
+                    Plataforma que permite analizar grandes cantidades
+                    de información e identificar patrones para facilitar
+                    la interpretación de datos.
+                </p>
+                <p><strong>Mi participación:</strong> Desarrollo de funciones
+                    de análisis y visualización de resultados.</p>
+                <p><strong>Tecnologías:</strong></p>
+                <span class="badge bg-morado">Python</span>
+                <span class="badge bg-morado">AWS</span>
+                <span class="badge bg-morado">Machine Learning</span>
+            </div>
+        </article>
+
+        <hr class="my-4">
+
+        <article id="proyecto-fashion" class="row align-items-center g-4 mb-5">
+
+            <div class="col-md-5">
+                <img src="imagenes/prjecto3.jpg" class="img-fluid rounded" alt="Fashion E-commerce">
+            </div>
+            <div class="col-md-7">
+                <span class="text-morado fw-semibold small">PROYECTO 03</span>
+                <h3 class="h4 fw-bold mt-2">Fashion E-commerce</h3>
+                <p class="text-secondary">
+                    Creación de una tienda virtual enfocada en productos
+                    de moda, con catálogo, filtros de búsqueda y carrito
+                    de compras.
+                </p>
+                <p><strong>Mi participación:</strong> Diseño de la página,
+                    organización del catálogo y desarrollo de interacciones.</p>
+                <p><strong>Tecnologías:</strong></p>
+                <span class="badge bg-morado">HTML</span>
+                <span class="badge bg-morado">CSS</span>
+                <span class="badge bg-morado">JavaScript</span>
+            </div>
+        </article>
+
+        <hr class="my-4">
+
+        <article id="proyecto-taskflow" class="row align-items-center g-4 mb-5">
+
+            <div class="col-md-5">
+                <img src="imagenes/projecto4.png" class="img-fluid rounded" alt="TaskFlow">
+            </div>
+            <div class="col-md-7">
+                <span class="text-morado fw-semibold small">PROYECTO 04</span>
+                <h3 class="h4 fw-bold mt-2">TaskFlow</h3>
+                <p class="text-secondary">
+                    Aplicación diseñada para organizar actividades,
+                    administrar proyectos y realizar un seguimiento
+                    de las tareas pendientes.
+                </p>
+                <p><strong>Mi participación:</strong> Desarrollo de la
+                    interfaz y funcionalidades para administrar tareas.</p>
+                <p><strong>Tecnologías:</strong></p>
+                <span class="badge bg-morado">React</span>
+                <span class="badge bg-morado">Python</span>
+                <span class="badge bg-morado">SQL</span>
+            </div>
+        </article>
+    </section>
+</main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="navegacion.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

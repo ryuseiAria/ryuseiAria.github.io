@@ -1,0 +1,176 @@
+:root {
+  --color-dark-blue: #00030E;
+  --color-night-blue: #0B0E1A;
+  --color-plum: #2C1B2F;
+  --color-mauve-dark: #5E3A5C;
+  --color-rose-mauve: #B47A9A;
+  --color-rose-white: #F3E9EC;
+  --color-primary: var(--color-mauve-dark);
+  --color-secondary: var(--color-rose-mauve);
+  --color-bg-dark: var(--color-dark-blue);
+  --color-bg-light: var(--color-rose-white);
+  --color-text-dark: #ffffff;
+  --color-text-light: #000000;
+  --foto: clamp(220px, 26vw, 340px);
+}
+
+/* Alias variables for legacy CSS */
+:root {
+  --morado: var(--color-mauve-dark);
+  --oscuro: var(--color-night-blue);
+  --texto-claro: var(--color-text-light);
+  --texto-oscuro: var(--color-text-dark);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background: transparent;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: var(--color-text-dark);
+  background: linear-gradient(to right, var(--color-mauve-dark) 33.333%, var(--color-night-blue) 33.333%);
+}
+
+.hero > .container-fluid {
+  width: 100%;
+}
+
+.col-foto {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.foto-perfil {
+  width: var(--foto);
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transform: translateX(50%);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, .4);
+}
+
+.col-texto {
+  padding: 2rem 3rem 2rem calc(var(--foto) / 2 + 3rem);
+}
+
+.rol {
+  color: #ccc;
+  font-weight: 300;
+}
+
+.nombre {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 600;
+}
+
+.bio {
+  max-width: 420px;
+  color: #bbb;
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+.btn-morado, .btn-outline-morado:hover {
+  background: var(--color-mauve-dark);
+  border-color: var(--color-mauve-dark);
+  color: #fff;
+}
+
+.btn-morado:hover {
+  background: #4a4eb0;
+  border-color: #4a4eb0;
+}
+
+.btn-outline-morado {
+  border: 2px solid var(--color-mauve-dark);
+  color: #fff;
+}
+
+.redes {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.6rem;
+  padding: 0;
+}
+
+.redes a {
+  color: var(--color-night-blue);
+}
+
+.redes a:hover {
+  color: var(--color-mauve-dark);
+}
+
+.text-morado {
+  color: var(--color-mauve-dark);
+}
+
+.bg-morado {
+  background-color: var(--color-mauve-dark);
+}
+
+.pagina {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.sobre-mi {
+  padding-left: 25px;
+  border-left: 3px solid #DDA6C5;
+}
+
+.sobre-mi p {
+  line-height: 1.8;
+  text-align: justify;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+.sobre-mi h2 {
+  letter-spacing: -1px;
+}
+
+.sobre-mi h4 {
+  margin-bottom: 15px;
+}
+
+/* Dark mode overrides */
+body.dark-mode {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
+
+.navbar.dark-mode {
+  background-color: var(--color-bg-dark) !important;
+}
+
+.hero.dark-mode {
+  background: linear-gradient(to right, var(--color-mauve-dark) 33.333%, var(--color-night-blue) 33.333%);
+}
+
+/* Light mode overrides */
+body.light-mode {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-light);
+}
+
+.navbar.light-mode {
+  background-color: var(--color-bg-light) !important;
+}
+
+.hero.light-mode {
+  background: linear-gradient(to right, var(--color-rose-mauve) 33.333%, var(--color-rose-white) 33.333%);
+}

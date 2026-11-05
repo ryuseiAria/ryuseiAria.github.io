@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referencias Laborales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar bg-dark fixed-top" data-bs-theme="dark">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand" href="index.html">JK. Jennie Kim</a>
+    <button id="theme-toggle" class="btn btn-outline-morado rounded-pill ms-2">Modo Oscuro</button>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navegación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil Personal</a></li>
+          <li class="nav-item"><a class="nav-link" href="PerfilProfesional.html">Perfil Profesional</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Trayectoria</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Experiencia.html">Experiencia</a></li>
+              <li><a class="dropdown-item" href="Formacion.html">Formación</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="Proyectos.html">Proyectos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="referencias-laborales.html">Referencias Laborales</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<main class="container pagina py-5 mt-5">
+  <section class="my-5">
+    <h2 class="h3 fw-bold mb-4">Referencias Laborales</h2>
+    <p class="text-secondary">A continuación se presentan referencias ficticias que avalan mi trayectoria profesional.</p>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Ana Martínez</h5>
+            <p class="card-text"><strong>Cargo:</strong> Gerente de Desarrollo</p>
+            <p class="card-text"><strong>Empresa:</strong> TechSolutions Ltd.</p>
+            <p class="card-text"><strong>Relación:</strong> Supervisora directa (2021‑2023)</p>
+            <p class="card-text"><strong>Contacto:</strong> <a href="mailto:ana.martinez@techsolutions.com">ana.martinez@techsolutions.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Luis Gómez</h5>
+            <p class="card-text"><strong>Cargo:</strong> Director de Innovación</p>
+            <p class="card-text"><strong>Empresa:</strong> FinTech Corp.</p>
+            <p class="card-text"><strong>Relación:</strong> Colaborador en proyecto FinTech (2020‑2021)</p>
+            <p class="card-text"><strong>Contacto:</strong> <a href="mailto:luis.gomez@fintech.com">luis.gomez@fintech.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
+
